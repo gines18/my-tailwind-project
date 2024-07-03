@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 export default function Contact() {
     return   (
@@ -17,7 +18,7 @@ export default function Contact() {
                   </div>
               </div>
               <div className="mt-12 text-center">
-                  <img src="https://dummyimage.com/500x300" alt="Contact" />
+                  <Image src="/coding.jpg" alt="Contact" layout="fixed" width={500} height={300} />
               </div>
           </div>
           <form> 
