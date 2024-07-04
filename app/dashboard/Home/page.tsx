@@ -44,7 +44,7 @@ export default function Main() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/design.jpg"
                   alt="blog"
-                  layout="fixed"
+                 
                   width={500}
                   height={300}
                 />
@@ -88,7 +88,7 @@ export default function Main() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/content.jpg"
                   alt="blog"
-                  layout="fixed"
+                  
                   width={500}
                   height={300}
                 />
@@ -132,7 +132,7 @@ export default function Main() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="/performance.jpg"
                   alt="blog"
-                  layout="fixed"
+                  
                   width={500}
                   height={300}
                 />
