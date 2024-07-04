@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <section className="text-gray-600 body-font">
