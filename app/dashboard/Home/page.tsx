@@ -19,7 +19,7 @@ export default function Home() {
               You
             </h1>
             <p className="mb-8 leading-relaxed">
-              Having a webpage is crucial in today's digital age as it provides
+              Having a webpage is crucial in today&apos;s digital age as it provides
               a platform for individuals and businesses to showcase their
               products, services, and personalities to a global audience. A
               webpage serves as a digital storefront, allowing customers to
@@ -100,7 +100,7 @@ export default function Home() {
                     Developing Compelling Website Content
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Unlock the power of content to communicate your company's
+                    Unlock the power of content to communicate your company&apos;s
                     value proposition. Learn how to create engaging,
                     informative, and persuasive content that resonates with your
                     target audience and drives conversions.
@@ -204,7 +204,7 @@ export default function Home() {
                 </h2>
                 <p className="leading-relaxed">
                   Understand what you want to achieve with your website, whether
-                  it's increasing brand visibility, driving sales, or providing
+                  it&apos;s increasing brand visibility, driving sales, or providing
                   information.
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function Home() {
               Age
             </h1>
             <p className="mb-8 leading-relaxed">
-              In today's digital era, establishing a robust online presence is
+              In today&apos;s digital era, establishing a robust online presence is
               essential for individuals and businesses alike. An online presence
               encompasses various digital footprints, including websites, social
               media profiles, and content contributions across different
