@@ -4,22 +4,25 @@ import Link from 'next/link';
 function Navbar() {
     
     return (
-<nav className="bg-white shadow dark:bg-gray-800">
-    <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        <Link href="/dashboard/Home" className="text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">home</Link>
-
-        <Link href="/dashboard/About" className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">About</Link>
-
-        <Link href="/dashboard/Blog" className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">blog</Link>
-        <Link href="/dashboard/Projects" className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">projects</Link>
-
-        <Link href="/dashboard/Contact" className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Contact</Link>
-
-    </div>
-</nav>
-
+<header className="text-gray-600 body-font">
+  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span className="ml-3 text-xl">Tailblocks</span>
+    </a>
+    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <Link   href="/dashboard/Home" className="mr-5 hover:text-gray-900">About</Link>
+      <Link   href="/dashboard/About" className="mr-5 hover:text-gray-900">Blog</Link>
+      <Link   href="/dashboard/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
+      <Link   href="/dashboard/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
+    </nav>
+  </div>
+</header>
 
   );
 }
 
 export default Navbar;
+
