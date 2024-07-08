@@ -1,7 +1,28 @@
+"use client"
 import React from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
+
 export default function About() {
+
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch('/api/users');
+        const fetchedUsers = await response.json();
+        setUsers(fetchedUsers);
+      } catch (error) {
+        console.error('Error fetching users:', error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+
   const team = [
     {
       name: "John Doe",
@@ -37,6 +58,15 @@ export default function About() {
 
   return (
     <>
+        <div>
+        <h1>Users</h1>
+        <ul>
+          {users.map((user) => (
+            <li key={user.email}>{user.name}</li>
+          ))}
+        </ul>
+      </div>
+
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
@@ -159,3 +189,4 @@ export default function About() {
     </>
   );
 }
+
