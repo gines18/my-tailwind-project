@@ -3,10 +3,14 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+interface User {
+  name: string;
+  email: string;
+}
 
 export default function About() {
 
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     const fetchUsers = async () => {

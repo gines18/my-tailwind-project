@@ -2,13 +2,14 @@
 
 // const prisma = new PrismaClient();
 // export default prisma
+
 // export async function main() {
-// // const user = await prisma.user.create({
-// //     data: {
-// //         name: "John Doe",
-// //         email: "john.doe@example.com",
-// //     }
-// // })
+// const user = await prisma.user.create({
+//     data: {
+//         name: "John Doe",
+//         email: "john.doe@example.com",
+//     }
+// })
 // const users = await prisma.user.findMany();
 
 // }
