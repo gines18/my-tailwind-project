@@ -36,7 +36,7 @@ export default function Main() {
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
             src="/code1.jpg"
-            layout="fixed"
+            priority
             width={500}
             height={300}
           />
@@ -272,7 +272,7 @@ export default function Main() {
             <Image
               src="/marketing.jpg"
               alt="hero"
-              layout="fixed"
+            
               width={500}
               height={300}
               className="object-cover object-center rounded"
