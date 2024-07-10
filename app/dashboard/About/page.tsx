@@ -8,13 +8,13 @@ export default function About() {
       image: "/testimonial1.jpg",
       name: "John Smith",
       title: "CEO of Tech Innovators Inc.",
-      text: "Working with the team to develop our company website has been a game-changer. Their expertise in website design and optimization has transformed our online presence. We've seen a significant increase in traffic and engagement, and our site truly reflects our brand identity now. Highly recommended!",
+      text: "Working with the team to develop our company website has been a game-changer. Their expertise in website design and optimization has transformed our online presence. We&apos;ve seen a significant increase in traffic and engagement, and our site truly reflects our brand identity now. Highly recommended!",
     },
     {
       image: "/testimonial2.jpg",
       name: "Alper Kamu",
       title: "DESIGNER",
-      text: "The process of crafting our website content was seamless and highly effective. The team understood our vision and delivered compelling content that perfectly communicates our value proposition. Our website has become a key tool in driving conversions and engaging with our audience. We couldn't be happier with the results!",
+      text: "The process of crafting our website content was seamless and highly effective. The team understood our vision and delivered compelling content that perfectly communicates our value proposition. Our website has become a key tool in driving conversions and engaging with our audience. We couldn&apos;t be happier with the results!",
     },
   ];
 

@@ -152,7 +152,7 @@ export default function Main() {
                   designs to refining existing ones. Throughout the day, we
                   collaborate with other team members, such as developers and
                   project managers, to ensure that our designs align with the
-                  project's goals and requirements. We also attend meetings with
+                  project&apos;s goals and requirements. We also attend meetings with
                   clients to present our designs and gather feedback. Overall,
                   our work as designers is dynamic, challenging, and rewarding.
                 </p>
