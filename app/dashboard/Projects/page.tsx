@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from 'next/link';
+
 export default function Main() {
   return (
     <>
@@ -121,11 +123,12 @@ export default function Main() {
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                  <img
+                  <Image
                     src="/face1.jpg"
                     alt="face"
                     className="w-30 h-20 rounded-full"
-                   
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
@@ -141,22 +144,34 @@ export default function Main() {
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <p className="leading-relaxed text-lg mb-4">
-                  A typical day in the life of a designer at our company involves a lot of creativity and problem-solving. We start our day by reviewing the current projects and discussing any updates or changes that need to be made. We then move on to our individual tasks, which can range from creating new designs to refining existing ones. Throughout the day, we collaborate with other team members, such as developers and project managers, to ensure that our designs align with the project's goals and requirements. We also attend meetings with clients to present our designs and gather feedback. Overall, our work as designers is dynamic, challenging, and rewarding.
+                  A typical day in the life of a designer at our company
+                  involves a lot of creativity and problem-solving. We start our
+                  day by reviewing the current projects and discussing any
+                  updates or changes that need to be made. We then move on to
+                  our individual tasks, which can range from creating new
+                  designs to refining existing ones. Throughout the day, we
+                  collaborate with other team members, such as developers and
+                  project managers, to ensure that our designs align with the
+                  project's goals and requirements. We also attend meetings with
+                  clients to present our designs and gather feedback. Overall,
+                  our work as designers is dynamic, challenging, and rewarding.
                 </p>
-                <a className="text-indigo-500 inline-flex items-center">
-                  Ask me a question
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+                
+                <Link href="/dashboard/Contact" className="text-indigo-500 inline-flex items-center">
+    Ask me a question
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="w-4 h-4 ml-2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+
+</Link>
               </div>
             </div>
           </div>
@@ -164,39 +179,46 @@ export default function Main() {
       </section>
 
       <section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
-  <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-  <div className="w-full sm:p-4 px-4 mb-6">
-    <h1 className="title-font font-medium text-xl mb-2 text-gray-900">Developers to focus</h1>
-    <div className="leading-relaxed">The future of web development looks promising with the rise of technologies like Progressive Web Apps (PWAs), WebAssembly, and serverless architectures.</div>
-  </div>
-  {[
-    { value: '2.7K', label: 'Users' },
-    { value: '1.8K', label: 'Subscribes' },
-    { value: '35', label: 'Downloads' },
-    { value: '4', label: 'Products' }
-  ].map((item, index) => (
-    <div key={index} className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-      <h2 className="title-font font-medium text-3xl text-gray-900">{item.value}</h2>
-      <p className="leading-relaxed">{item.label}</p>
-    </div>
-  ))}
-</div>
-    <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-      <Image
-        alt="stats"
-        layout="responsive"
-        width={600}
-        height={300}
-        objectFit="cover"
-        src="/project3.jpg"
-        className="w-full h-full"
-      />
-    </div>
-  </div>
-</section>
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+            <div className="w-full sm:p-4 px-4 mb-6">
+              <h1 className="title-font font-medium text-xl mb-2 text-gray-900">
+                Developers to focus
+              </h1>
+              <div className="leading-relaxed">
+                The future of web development looks promising with the rise of
+                technologies like Progressive Web Apps (PWAs), WebAssembly, and
+                serverless architectures.
+              </div>
+            </div>
+            {[
+              { value: "2.7K", label: "Users" },
+              { value: "1.8K", label: "Subscribes" },
+              { value: "35", label: "Downloads" },
+              { value: "4", label: "Products" },
+            ].map((item, index) => (
+              <div key={index} className="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-medium text-3xl text-gray-900">
+                  {item.value}
+                </h2>
+                <p className="leading-relaxed">{item.label}</p>
+              </div>
+            ))}
+          </div>
+          <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+            <Image
+              alt="stats"
+              layout="responsive"
+              width={600}
+              height={300}
+              objectFit="cover"
+              src="/project3.jpg"
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
 
-       
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -211,17 +233,20 @@ export default function Main() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Development process
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              Development process
             </h1>
-            <p className="mb-8 leading-relaxed">Web development also emphasizes the importance of responsive design, ensuring websites function well across various devices and screen sizes. Frameworks like Bootstrap and Tailwind CSS provide pre-designed components and utilities, speeding up the development process while maintaining a consistent look and feel. This approach is crucial as mobile internet usage continues to grow.
-
-</p>
-           
+            <p className="mb-8 leading-relaxed">
+              Web development also emphasizes the importance of responsive
+              design, ensuring websites function well across various devices and
+              screen sizes. Frameworks like Bootstrap and Tailwind CSS provide
+              pre-designed components and utilities, speeding up the development
+              process while maintaining a consistent look and feel. This
+              approach is crucial as mobile internet usage continues to grow.
+            </p>
           </div>
         </div>
       </section>
-       
-
     </>
   );
 }

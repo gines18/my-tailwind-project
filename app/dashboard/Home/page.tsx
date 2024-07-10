@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Main() {
   const data = [
@@ -54,9 +55,9 @@ export default function Main() {
               brand awareness and credibility.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Read more
-              </button>
+            <a className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" href="#steps">
+  Read more
+</a>
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@ export default function Main() {
               </h1>
               <p className="leading-relaxed mb-3">{item.description}</p>
               <div className="flex items-center flex-wrap">
-                <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                <Link href="/dashboard/Projects" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                   Learn More
                   <svg
                     className="w-4 h-4 ml-2"
@@ -98,7 +99,7 @@ export default function Main() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -110,7 +111,7 @@ export default function Main() {
 
 
 
-      <section className="text-gray-600 body-font">
+      <section id="steps" className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
@@ -263,9 +264,10 @@ export default function Main() {
               platforms.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                First step
-              </button>
+            <Link href="/dashboard/Projects" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+    First step
+
+</Link>
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
