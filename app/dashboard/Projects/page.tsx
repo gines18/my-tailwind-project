@@ -152,9 +152,7 @@ export default function Main() {
                   designs to refining existing ones. Throughout the day, we
                   collaborate with other team members, such as developers and
                   project managers, to ensure that our designs align with the
-                  project&apos;s goals and requirements. We also attend meetings with
-                  clients to present our designs and gather feedback. Overall,
-                  our work as designers is dynamic, challenging, and rewarding.
+                  project&apos;s goals and requirements.
                 </p>
                 
                 <Link href="/dashboard/Contact" className="text-indigo-500 inline-flex items-center">
@@ -247,6 +245,73 @@ export default function Main() {
           </div>
         </div>
       </section>
+
+      <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="text-center mb-20">
+      <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Empowering Your Online Presence</h1>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Create websites that adapt seamlessly to various devices, ensuring a consistent user experience across desktops, tablets, and mobiles.</p>
+    </div>
+    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Responsive Design</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Intuitive Drag-and-Drop Editor</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Robust Templates</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">SEO Optimization</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">E-Commerce Integration</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Analytics and Insights</span>
+        </div>
+      </div>
+    </div>
+    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+  </div>
+</section>
+
     </>
   );
 }
