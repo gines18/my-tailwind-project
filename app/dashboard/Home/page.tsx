@@ -1,7 +1,21 @@
+"use client"
+
 import Image from "next/image";
 import Link from 'next/link';
+import { useEffect } from 'react';
+
 
 export default function Main() {
+
+
+  useEffect(() => {
+    // This code will only run on the client side
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('subscription-success') === 'true') {
+      alert("Thank you for subscribing to our newsletter!");
+    }
+  }, []);
+
   const data = [
     {
       image: "/design.jpg",
