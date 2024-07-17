@@ -13,10 +13,11 @@ const UserForm = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://54.174.21.215/submit', { name, email });
+      const response = await axios.post('https://demo1.codehobby.site/submit', { name, email });
 
       if (response.status === 201 || 200) {
         console.log("Success!")
+        alert("Udalo sie!")
       } else {
         console.error('Failed to send user data');
       }
