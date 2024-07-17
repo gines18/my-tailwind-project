@@ -9,7 +9,7 @@ const UserForm = () => {
   const [email, setEmail] = useState('');
   const router = useRouter();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     try {
