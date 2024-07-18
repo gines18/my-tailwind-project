@@ -12,7 +12,7 @@ const UserProfile = async () => {
   const user = await fetchUser();
 
   return (
-    <div>
+    <div className="flex flex-col p-4 justify-center items-center">
       <div>Welcome!</div>
       <div>{user?.email || "No user found"}</div>
       <LogoutLink>Log out</LogoutLink>
