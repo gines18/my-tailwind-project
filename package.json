@@ -30,6 +30,9 @@
   "@formspree/react": "^2.5.1",
   
     
+  "@kinde-oss/kinde-auth-nextjs": "^2.3.5",
+  
+    
   "axios": "^1.7.2",
   
     

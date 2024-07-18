@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 function Navbar() {
-    
+
     return (
 <header className="text-gray-600 body-font">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -18,6 +18,9 @@ function Navbar() {
       <Link   href="/dashboard/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
       <Link   href="/dashboard/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
       <Link   href="/dashboard/Newsletter" className="mr-5 hover:text-gray-900">Newsletter</Link>
+      <Link  href="/dashboard/Login" className="mr-5 hover:text-gray-900">Login</Link>
+    
+    
     </nav>
   </div>
 </header>
