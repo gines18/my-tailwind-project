@@ -20,6 +20,7 @@ async function Login() {
           </div>
         ) : (
           <div>
+            <p>Hi, {user?.given_name}</p>
             <LogoutLink>Log out</LogoutLink>
           </div>
         )}

@@ -17,8 +17,8 @@ function Navbar() {
       <Link   href="/Home" className="mr-5 hover:text-gray-900">Home</Link>
       <Link   href="/About" className="mr-5 hover:text-gray-900">About</Link>
       <Link   href="/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
-      <Link   href="/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
       <Link   href="/Newsletter" className="mr-5 hover:text-gray-900">Newsletter</Link>
+      <Link   href="/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
     </nav>
   <div className='text-sky-600'>
     <Login /> 

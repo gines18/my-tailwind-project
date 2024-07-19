@@ -10,13 +10,20 @@ async function fetchUser() {
 
 const UserProfile = async () => {
   const user = await fetchUser();
+  if (!user) {
+    return <section className="flex bg-slate-400">No user found</section>;
+  }
+
 
   return (
-    <section className="flex bg-slate-400">
-    <div className="flex flex-col ">
-      <div>Welcome!</div>
-      <div>{user?.email || "No user found"}</div>
-    </div>
+  <section className="max-w-md mx-auto p-4 my-8 bg-white rounded shadow-md">
+      <div className="flex flex-col items-center">
+        
+        <h2 className="text-lg font-bold">{user.given_name} {user.family_name}</h2>
+        <p className="text-gray-600">{user.email}</p>
+        {/* Add more user profile information here */}
+       
+      </div>
     </section>
   );
 }
