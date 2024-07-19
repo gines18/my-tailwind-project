@@ -13,7 +13,7 @@ async function Login() {
   return (
     <div>
       <>
-        {!(await isAuthenticated) ? (
+        {!( await isAuthenticated()) ? (
           <div>
             <LoginLink>Sign in / </LoginLink>
             <RegisterLink>Sign up</RegisterLink>
