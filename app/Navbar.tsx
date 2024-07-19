@@ -1,33 +1,71 @@
+import Link from "next/link";
+import Login from "./Login/page";
 
-import Link from 'next/link';
-
-import Login from './Login/page';
 function Navbar() {
+  return (
+    <>
+      <div>
+        <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
+          <div className="flex-1 flex justify-between items-center">
+            <a href="#" className="text-xl">
+              Company
+            </a>
+          </div>
 
-    return (
-<header className="text-gray-600 body-font">
-  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span className="ml-3 text-xl">Website name</span>
-    </a>
-    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <Link   href="/Home" className="mr-5 hover:text-gray-900">Home</Link>
-      <Link   href="/About" className="mr-5 hover:text-gray-900">About</Link>
-      <Link   href="/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
-      <Link   href="/Newsletter" className="mr-5 hover:text-gray-900">Newsletter</Link>
-      <Link   href="/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
-    </nav>
-  <div className='text-sky-600'>
-    <Login /> 
-  </div>
-  </div>
-</header>
+          <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
+            <svg
+              className="fill-current text-gray-900"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+          <input className="hidden" type="checkbox" id="menu-toggle" />
 
+          <div className="md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav id="menu-hide">
+              <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                <li>
+                  <Link className="md:p-4 py-3 px-0 block" href="/Home">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="md:p-4 py-3 px-0 block" href="/About">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link className="md:p-4 py-3 px-0 block" href="/Projects">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="/Newsletter">
+                    Newsletter
+                  </Link>
+                </li>
+                <li>
+                  <Link className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="/Contact">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <span className="text-sky-600">
+                    <Login />
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </>
   );
 }
 
 export default Navbar;
-

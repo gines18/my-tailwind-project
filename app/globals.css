@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide the menu by default */
+#menu-hide {
+  display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked ~ #menu #menu-hide {
+  display: block;
+}
+
+/* Ensure the menu is always visible on larger screens */
+@media (min-width: 768px) {
+  #menu-hide {
+    display: block !important;
+  }
+}
