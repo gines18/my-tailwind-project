@@ -1,15 +1,12 @@
 "use client"
-
 import Image from "next/image";
 import React from "react";
-import Link from 'next/link';
-
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrbzgoyz");
   if (state.succeeded) {
-    window.location.href = '/dashboard/Home';
+    window.location.href = '/Home';
    
   }
 

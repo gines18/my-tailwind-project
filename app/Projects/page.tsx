@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-export default function Main() {
+export default function Projects() {
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -155,7 +155,7 @@ export default function Main() {
                   project&apos;s goals and requirements.
                 </p>
                 
-                <Link href="/dashboard/Contact" className="text-indigo-500 inline-flex items-center">
+                <Link href="/Contact" className="text-indigo-500 inline-flex items-center">
     Ask me a question
     <svg
       fill="none"
@@ -308,7 +308,7 @@ export default function Main() {
         </div>
       </div>
     </div>
-    <Link href="/dashboard/Contact"> 
+    <Link href="/Contact"> 
     <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Contact me</button>
     </Link>
   </div>

@@ -1,6 +1,7 @@
-"use client"
+
 import Link from 'next/link';
 
+import Login from './Login/page';
 function Navbar() {
 
     return (
@@ -13,15 +14,15 @@ function Navbar() {
       <span className="ml-3 text-xl">Website name</span>
     </a>
     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <Link   href="/dashboard/Home" className="mr-5 hover:text-gray-900">Home</Link>
-      <Link   href="/dashboard/About" className="mr-5 hover:text-gray-900">About</Link>
-      <Link   href="/dashboard/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
-      <Link   href="/dashboard/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
-      <Link   href="/dashboard/Newsletter" className="mr-5 hover:text-gray-900">Newsletter</Link>
-      <Link  href="/dashboard/Login" className="mr-5 hover:text-gray-900">Login</Link>
-    
-    
+      <Link   href="/Home" className="mr-5 hover:text-gray-900">Home</Link>
+      <Link   href="/About" className="mr-5 hover:text-gray-900">About</Link>
+      <Link   href="/Projects" className="mr-5 hover:text-gray-900">Projects</Link>
+      <Link   href="/Contact" className="mr-5 hover:text-gray-900">Contact</Link>
+      <Link   href="/Newsletter" className="mr-5 hover:text-gray-900">Newsletter</Link>
     </nav>
+  <div className='text-sky-600'>
+    <Login /> 
+  </div>
   </div>
 </header>
 

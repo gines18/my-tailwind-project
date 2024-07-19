@@ -1,20 +1,8 @@
-"use client"
 
 import Image from "next/image";
 import Link from 'next/link';
-import { useEffect } from 'react';
 
-
-export default function Main() {
-
-
-  useEffect(() => {
-    // This code will only run on the client side
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('subscription-success') === 'true') {
-      alert("Thank you for subscribing to our newsletter!");
-    }
-  }, []);
+export default function HomePage() {
 
   const data = [
     {
@@ -99,7 +87,7 @@ export default function Main() {
               </h1>
               <p className="leading-relaxed mb-3">{item.description}</p>
               <div className="flex items-center flex-wrap">
-                <Link href="/dashboard/Projects" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                <Link href="/Projects" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                   Learn More
                   <svg
                     className="w-4 h-4 ml-2"
@@ -278,7 +266,7 @@ export default function Main() {
               platforms.
             </p>
             <div className="flex justify-center">
-            <Link href="/dashboard/Projects" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <Link href="/Projects" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
     First step
 
 </Link>
