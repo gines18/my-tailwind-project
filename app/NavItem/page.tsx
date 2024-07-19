@@ -1,8 +1,12 @@
 "use client"
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 
-function Nav() {
+interface NavProps {
+  children: ReactNode;
+}
+
+function Nav( { children }: NavProps) {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -65,6 +69,7 @@ function Nav() {
               </li>
               <li>
                 <span className="text-sky-600">
+                {children}
                 </span>
               </li>
             </ul>
