@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "./Login/page";
-import Nav from "./NavItem/page";
+import Nav from "./components/Nav";
 
 function Navbar() {
   return (
