@@ -9,7 +9,7 @@ Are you considering diving into the world of programming but feeling overwhelmed
 
 <p align="center">
   <img src="https://github.com/gines18/my-tailwind-project/blob/main/public/blog-img.jpeg?raw=true/" width="350" title="hover text">
-</p>
+</p> <br><br>
 
 ## Why Learn Programming? <br><br>
 
@@ -30,7 +30,7 @@ For beginners, I often recommend starting with one of these languages:
 
 <p align="center">
   <img src="https://github.com/gines18/my-tailwind-project/blob/main/public/coding22.jpeg?raw=true/" width="350" title="hover text">
-</p>
+</p> <br><br>
 
 ## Getting Started: Your First Steps <br><br> 
 
@@ -65,7 +65,7 @@ Remember, your first programs don't need to be complex. The goal is to apply wha
 
 <p align="center">
   <img src="https://github.com/gines18/my-tailwind-project/blob/main/public/coding2.jpeg?raw=true/" width="350" title="hover text">
-</p>
+</p> <br><br>
 
 ## Conclusion <br><br>
 
