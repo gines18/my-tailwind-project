@@ -73,4 +73,6 @@ Starting your programming journey might seem daunting, but remember that every e
 
 ---
 
-Remember, the journey of a thousand miles begins with a single step. Or in this case, a single line of code. So why not start today?
+Remember, the journey of a thousand miles begins with a single step. Or in this case, a single line of code. So why not start today? 
+<br><br>
+<br><br>
