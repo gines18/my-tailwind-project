@@ -33,6 +33,7 @@ function Nav( { children }: NavProps) {
             width="20"
             height="20"
             viewBox="0 0 20 20"
+            
           >
             <title>menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -67,6 +68,9 @@ function Nav( { children }: NavProps) {
                   Contact
                 </Link>
               </li>
+              <Link href="/blog" className="md:p-4 py-3 px-0 block md:mb-0 mb-2" onClick={closeNav}>
+                Blog
+              </Link>
               <li>
                 <span className="text-sky-600">
                 {children}
