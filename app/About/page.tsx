@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
+
 export default function About() {
   const testimonials = [
     {
@@ -66,24 +67,25 @@ export default function About() {
               excellence.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center -m-1">
+          <div className="bg-[url('/bg2.jpg')] flex flex-wrap justify-center -m-1">
             {team.map((member, index) => (
               <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
                   <div className="flex-shrink-0 rounded-lg w-full h-56 mb-4 relative">
                     <Image
+                   
                       alt="team"
                       src={member.face}
                       layout="fill"
                       objectFit="cover"
-                      className="rounded-lg"
+                      className="h-full flex flex-col items-center text-center bg-white bg-opacity-8 rounded-md p-4"
                     />
                   </div>
                   <div className="w-full">
-                    <h2 className="title-font font-medium text-lg text-gray-900">
+                    <h2 className="title-font font-medium text-lg text-yellow-500">
                       {member.name}
                     </h2>
-                    <h3 className="text-gray-500 mb-3">{member.job}</h3>
+                    <h3 className="text-yellow-600 mb-3">{member.job}</h3>
 
                     <span className="inline-flex">
                       <a className="text-gray-500">
