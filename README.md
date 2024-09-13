@@ -39,3 +39,5 @@ License
 Distributed under the MIT License. See LICENSE for more information.
 
 Thank you for checking out this project! If you have any questions, feel free to open an issue or contact us directly. Happy coding!
+
+2024
