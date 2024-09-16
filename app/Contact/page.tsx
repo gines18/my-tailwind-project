@@ -1,14 +1,23 @@
 "use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrbzgoyz");
-  if (state.succeeded) {
-    window.location.href = '/Home';
-   
-  }
+  const[message, setMessage] = useState(false)
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setMessage(true);
+      const timer = setTimeout(() => {
+        window.location.href = '/Home'; // Redirect after 5 seconds
+      }, 5000);
+
+      return () => clearTimeout(timer); // Cleanup timer on component unmount
+    }
+  }, [state.succeeded]);
+
 
   return (
     <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-gray-100 text-gray-900 rounded-lg">
@@ -107,6 +116,9 @@ export default function Contact() {
             Send Message
           </button>
         </div>
+        {message && (
+          <div>Message sent!</div>
+        )}
       </form>
     </div>
   );
