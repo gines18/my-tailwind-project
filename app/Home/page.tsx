@@ -19,7 +19,7 @@ export default function HomePage() {
       title: "Developing Compelling Website Content",
       subtitle: "Website Content",
       description:
-        "Unlock the power of content to communicate your company&apos;s value proposition. Learn how to create engaging, informative, and persuasive content that resonates with your target audience and drives conversions.",
+        "Unlock the power of content to communicate your company's value proposition. Learn how to create engaging, informative, and persuasive content that resonates with your target audience and drives conversions.",
     },
     {
       image: "/performance.jpg",

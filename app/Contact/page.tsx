@@ -12,7 +12,7 @@ export default function Contact() {
       setMessage(true);
       const timer = setTimeout(() => {
         window.location.href = '/Home'; // Redirect after 5 seconds
-      }, 5000);
+      }, 3000);
 
       return () => clearTimeout(timer); // Cleanup timer on component unmount
     }
@@ -108,7 +108,7 @@ export default function Contact() {
             errors={state.errors}
           />
         </div>
-        <div className="mt-8">
+        <div className="m-8">
           <button
             className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700"
             type="submit"
@@ -117,7 +117,10 @@ export default function Contact() {
           </button>
         </div>
         {message && (
-          <div>Message sent!</div>
+          
+          <div className="flex justify-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+  <span className="font-medium"> Message sent! Typically respond in 2 working days.</span>
+</div>
         )}
       </form>
     </div>
