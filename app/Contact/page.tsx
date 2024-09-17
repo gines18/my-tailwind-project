@@ -101,6 +101,7 @@ export default function Contact() {
             placeholder="Enter your Message"
             required
             name="message"
+            minLength={50}
           ></textarea>
           <ValidationError
             prefix="Message"
