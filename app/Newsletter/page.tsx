@@ -16,8 +16,8 @@ const UserForm = () => {
       const response = await axios.post('https://demo1.codehobby.site/submit', { name, email });
 
       if (response.status === 201 || 200) {
-        window.location.href = '/?subscription-success=true'; 
-        console.log("Success!")
+        window.location.href = '/Home'; 
+        
       } else {
         console.error('Failed to send user data');
       }
