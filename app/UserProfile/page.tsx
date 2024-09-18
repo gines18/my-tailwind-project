@@ -1,6 +1,6 @@
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import React from 'react';
-
+import WeatherPage from '../Weather/page'
 
 async function fetchUser() {
   const { getUser } = getKindeServerSession();
@@ -16,6 +16,7 @@ const UserProfile = async () => {
 
 
   return (
+    <>
   <section className="max-w-md mx-auto p-4 my-8 bg-white rounded shadow-md">
       <div className="flex flex-col items-center">
         
@@ -25,6 +26,10 @@ const UserProfile = async () => {
        
       </div>
     </section>
+    <section>
+      <WeatherPage />
+    </section>
+    </>
   );
 }
 
