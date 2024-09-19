@@ -1,6 +1,8 @@
 
+'use client'
 import Image from "next/image";
 import Link from 'next/link';
+import { motion } from "framer-motion"
 
 export default function HomePage() {
 
@@ -43,7 +45,12 @@ export default function HomePage() {
             width={500}
             height={300}
           />
-          <div className="text-center lg:w-2/3 w-full">
+          <motion.div
+          initial={{y: 100}}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.2 }}
+         
+          className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Craft Your Online Presence: Build a Website that Truly Represents
               You
@@ -61,7 +68,7 @@ export default function HomePage() {
   Read more
 </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -272,7 +279,11 @@ export default function HomePage() {
 </Link>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 3 }}
+          className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
               src="/marketing.jpg"
               alt="hero"
@@ -281,7 +292,7 @@ export default function HomePage() {
               height={300}
               className="object-cover object-center rounded"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -347,7 +358,10 @@ export default function HomePage() {
 </section>
 
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
+        <motion.div 
+           initial={{ opacity: 0, x: -100 }}
+           whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4 } }}
+        className="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
           <div className="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Download our App</h2>
             <h1 className="md:text-3xl text-2xl font-medium title-font text-gray-900">Use it on Android or iOS</h1>
@@ -376,7 +390,7 @@ export default function HomePage() {
               </Link>
             </button>
           </div>
-        </div>
+        </motion.div>
       </section>
        
       
