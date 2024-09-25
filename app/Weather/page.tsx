@@ -6,7 +6,7 @@ async function fetchWeather(city: string) {
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=732a88c6f9f8186453f47b435c9ba5f3`;
   const response = await fetch(url);
   const data = await response.json();
-  const temperatures = data.list.slice(0, 5).map(item => item.main.temp - 273.15); // Get temperatures for the next 5 days
+  const temperatures = data.list.slice(0, 5).map((item: { main: { temp: number } }) => item.main.temp - 273.15); // Get temperatures for the next 5 days
   const temperatureMax = data.list[0].main.temp_max - 273.15; // Keep max temperature for today
   const icon = data.list[0].weather[0].icon;
   return [ temperatures, temperatureMax, icon ]; // Return array of temperatures
